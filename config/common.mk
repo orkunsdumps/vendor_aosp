@@ -187,6 +187,10 @@ PRODUCT_PACKAGES += \
     Aperture
 endif
 
+# Enable lockscreen live wallpaper
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.wm.debug.lockscreen_live_wallpaper=true
+
 # Use gestures by default
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
